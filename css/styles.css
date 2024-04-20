@@ -5,26 +5,42 @@ body {
 
 /* Identificador general para etiqueta body en html */
 body {
+  
+  /* Se utiliza para hacer un elemento sea un contenedor del Flexbox */
   display: -ms-flexbox;
+  /* Permite crear diseños de página flexibles y responsivos, donde los elementos pueden distribuirse y ajustarse automáticamente según el tamaño de la pantalla.*/
   display: -webkit-box;
+  /*Crea un contenedor flexible, permite distribuir los elementos de forma más flexible y eficiente que los métodos tradicionales de diseño web.  */
   display: flex;
+  /*Se utiliza para alinear verticalmente el contenido de un elemento flexible en el centro de su contenedor.*/
   -ms-flex-align: center;
-  -ms-flex-pack: center;
+  /*Se utiliza para centrar horizontalmente los elementos flex dentro de un contenedor flex.*/
+  -ms-flex-pack: center00;
+  /*Alinea verticalmente el contenido de un elemento flexible dentro de su contenedor.*/
   -webkit-box-align: center;
+   /*Alinea verticalmente los elementos flexbox o grid dentro de su contenedor.*/
   align-items: center;
+  /*Se encarga de centrar horizontalmente los elementos secundarios dentro de un contenedor que utiliza el modelo de caja flexible de WebKit*/
   -webkit-box-pack: center;
+  /*Define cómo el navegador ue distribuye el espacio entre y alrededor de los elementos flex, a lo largo del eje principal de su contenedor.*/
   justify-content: center;
+  /*Establece el espacio de relleno en la parte superior de un elemento. El área de relleno es el espacio que separa el contenido del elemento de su borde.*/
   padding-top: 40px;
+  /*Establece un relleno de píxeles en la parte inferior de un elemento. El relleno es el espacio que separa el contenido del elemento de su borde.*/
   padding-bottom: 40px;
+  /*Establece el color de fondo de un elemento HTML. */
   background-color: #f5f5f5;
 }
 
 /* el identificador .form-signin representa una clase */
 .form-signin {
+  /* establece el tamanio del ancho de su contendor padre*/
   width: 100%;
-  max-width: 330px;
+  /*establece el maximo del ancho en un elemento de pagina*/
+  max-width: 330px; 
   /* padding y margin agregan espacios dentro y fuera del contenedor respectivamente */
   padding: 15px;
+  /*se utiliza para controlar el espacio de un elemento y los elementos*/
   margin: 0 auto;
 }
 .form-signin .checkbox {
@@ -38,10 +54,12 @@ body {
   padding: 10px;
   font-size: 16px;
 }
+/* Esto estilos afectan a los elementos que estan siendo enfocados en el formulario*/
 .form-signin .form-control:focus {
     /* z index indica que tiene orden 2 en la profundidad del documento html, donde 1 sera el frente, y 2 esta detras */
   z-index: 2;
 }
+/*es un selector CSS que selecciona los elementos <input> dentro del formulario que tienen el atributo type = email*/
 .form-signin input[type="email"] {
   margin-bottom: -1px;
   /* border bottom right radius da una curvatura a una esquina de un elemento html */
@@ -53,7 +71,3 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
-
-
-
